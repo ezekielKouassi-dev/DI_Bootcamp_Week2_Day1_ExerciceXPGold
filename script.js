@@ -9,15 +9,19 @@ console.log(sentence.join(" "));
 let str1 = "mix";
 let str2 = "pod";
 
-str1.replace("mi" ,"po");
-str2.replace("po", "mi");
+str1 = str1.split("");
+str1.splice(0, 2, 'p', 'o');
+str1 = str1.join("");
 
-let newString = str1 + ' ' + str1;
+str2 = str2.split("");
+str2.splice(0, 2, 'm', 'i');
+str2 = str2.join("");
+
+let newString = str1 + ' ' + str2;
 
 console.log(newString);
 
-//str1 = str1.split("").splice(0, 1, 'p', 'o').join("");
-//str2 = str2.split("").splice(0, 1, 'm', 'i').join("");
+
 
 // Exercice 3 : calculatrice
 
